@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-image: url(https://images.pexels.com/photos/13554986/pexels-photo-13554986.jpeg?cs=srgb&dl=pexels-mathilde-langevin-13554986.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index:-1;
+}
+.container::before{
+    content:"";
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+
+}
+.container h1{  
+    font-size: 2rem;
+  }
